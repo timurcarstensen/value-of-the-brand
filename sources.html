@@ -1,123 +1,104 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>Value Of The Brand: Visualisation 1</title>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-</head>
-
-<body>
-    <div id="nav">
-        <a href="index.html">Value Of The Brand</a>
-        <a href="about.html">About</a>
-        <a href="sources.html">Sources</a>
-        <a href="research.html">Research</a>        
-    </div>
-
-    <div class="TextBoxContainer">
-        <p class="TextTitle" style="margin-bottom: 70px">Sources</p>
+    <head>
+        <meta charset="UTF-8">
+        <title>Value Of The Brand: Visualisation 1</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="nav">
+            <a href="index.html">Value Of The Brand</a>
+            <a href="about.html">About</a>
+            <a href="sources.html">sources</a>
+            <a href="research.html">Research</a>
+        </div>
+        <div class="TextBoxContainer">
+            <p class="TextTitle" style="margin-bottom: 70px">sources</p>
+            
+            
+        </div>
+        <div class="cardContainer" style="padding-bottom: 10%">
+            <div class="image">
+                <a href="https://www.interbrand.com/" target="_blank">
+                    <img src="resources/sources/interbrand.png" />
+                </a>
+            </div>
+            <div class="image">
+                <a href="https://brandfinance.com/" target="_blank">
+                    <img src="resources/sources/brandFinance.png" />
+                </a>
+            </div>
+            <div class="image">
+                <a href="https://www.millwardbrown.com/" target="_blank">
+                    <img src="resources/sources/millwardBrown.png" />
+                </a>
+            </div>
+            <div class="image">
+                <a href="https://www.forbes.com/" target="_blank">
+                    <img src="resources/sources/forbes.png" />
+                </a>
+            </div>
+            <div class="image">
+                <a href="https://fortune.com/" target="_blank">
+                    <img src="resources/sources/fortune.png" />
+                </a>
+            </div>
+            <div class="image">
+                <a href="https://www.bv4.ch/" target="_blank">
+                    <img src="resources/sources/bv4.png" />
+                </a>
+            </div>
+            <div class="image">
+                <a href="https://corebrand.co/" target="_blank">
+                    <img src="resources/sources/corebrand.png" />
+                </a>
+            </div>
+        </div>
         
-        
-    </div>
-
-    <div class="cardContainer" style="padding-bottom: 10%">
-        <div class="image">
-            <a href="https://www.interbrand.com/" target="_blank">
-                <img src="Resources/Sources/interbrand.png" />
+        <div id="footer">
+            <a style="text-decoration: none;" href="https://www.the-klu.org/faculty-research/resident-faculty/alexander-himme/">
+                © 2020 Copyright Prof. Dr. Alexander Himme
+            </a>
+            <a style="float: right; text-decoration: none;" href="imprint.html">
+                Imprint
             </a>
         </div>
-        <div class="image">
-            <a href="https://brandfinance.com/" target="_blank">
-                <img src="Resources/Sources/brandFinance.png" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="https://www.millwardbrown.com/" target="_blank">
-                <img src="Resources/Sources/millwardBrown.png" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="https://www.forbes.com/" target="_blank">
-                <img src="Resources/Sources/forbes.png" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="https://fortune.com/" target="_blank">
-                <img src="Resources/Sources/fortune.png" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="https://www.bv4.ch/" target="_blank">
-                <img src="Resources/Sources/bv4.png" />
-            </a>
-        </div>
-        <div class="image">
-            <a href="https://corebrand.co/" target="_blank">
-                <img src="Resources/Sources/corebrand.png" />
-            </a>
-        </div>
-    </div>
-
-
-    
-
-    <div id="footer">
-        <a style="text-decoration: none;" href="https://www.the-klu.org/faculty-research/resident-faculty/alexander-himme/">
-            © 2020 Copyright Prof. Dr. Alexander Himme
-        </a>
-        <a style="float: right; text-decoration: none;" href="imprint.html">
-            Imprint
-        </a>
-    </div>
-
-</body>
-
-
-
-
-<!-- SCRIPTS -->
-
-<!-- Tableau JS -->
-
-<script type='text/javascript'>
+    </body>
+    <!-- SCRIPTS -->
+    <!-- Tableau JS -->
+    <script type='text/javascript'>
     var divElement = document.getElementById('viz1579643407752');
     var vizElement = divElement.getElementsByTagName('object')[0];
     if (divElement.offsetWidth > 800) {
-        vizElement.style.width = '1000px';
-        vizElement.style.height = '827px';
+    vizElement.style.width = '1000px';
+    vizElement.style.height = '827px';
     } else if (divElement.offsetWidth > 500) {
-        vizElement.style.width = '1000px';
-        vizElement.style.height = '827px';
+    vizElement.style.width = '1000px';
+    vizElement.style.height = '827px';
     } else {
-        vizElement.style.width = '100%';
-        vizElement.style.height = '727px';
+    vizElement.style.width = '100%';
+    vizElement.style.height = '727px';
     }
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
-
-<!-- Sticky Navigation Bar -->
-
-<script>
-window.onscroll = function() {
+    </script>
+    <!-- Sticky Navigation Bar -->
+    <script>
+    window.onscroll = function() {
     myFunction()};
-
-var navbar = document.getElementById("nav");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
+    var navbar = document.getElementById("nav");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky"); // makes the navigation bar sticky when scrolling
     navbar.classList.add("dropShadow"); // adds a shadow to thwe navigation bar when scrolling
-  } else {
+    } else {
     navbar.classList.remove("sticky"); // removes sticky property from navigation bar when reaching top
     navbar.classList.remove("dropShadow"); //removes the drop shadow when reaching the top of the site
-  }
-}
-</script>
-
+    }
+    }
+    </script>
 </html>
