@@ -1,0 +1,215 @@
+* {
+  font-family: Open Sans;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.cardContainer {
+  width: 70%;
+  margin: 0px auto 0px;
+  overflow: auto;
+}
+
+.cardContainer .image {
+  width: 50%;
+  float: left;
+}
+
+.cardContainer img {
+  width: calc(100% - (20px * 2));
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+.cardContainer img:hover {
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.justify {
+  text-align: justify;
+}
+
+#nav {
+  border: none;
+  border-width: 1px 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #5087F4;
+}
+
+#nav li {
+  display: inline;
+}
+
+#nav a {
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#nav a:hover {
+  color: lightgrey;
+}
+
+.dropShadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.box {
+  margin: 20px;
+  background-color: #5087F4;
+}
+
+.TextBoxContainer {
+  margin: 5% 20% 100px 20%;
+  padding: 0;
+}
+
+.TextTitle {
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 0;
+  margin-top: 130px;
+}
+
+.StandardText {
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.EndCardContainer {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  border: none;
+  padding-bottom: 8%;
+}
+
+.EndCardText {
+  text-align: center;
+  width: 70%;
+  margin: 15px auto 15px;
+  font-weight: normal;
+}
+
+#more {
+  display: none;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky+.content {
+  padding-top: 60px;
+}
+
+.tableauPlaceholder {
+  margin: auto;
+}
+
+.vizDescription {
+  margin: 0 20%;
+}
+
+#readMoreButton {
+  background-color: white;
+  border: 2px solid rgb(80, 135, 245);
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  /*display: flex;*/
+  font-size: 16px;
+  color: black;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  outline: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  right: 50%;
+}
+
+#readMoreButton:hover {
+  background-color: rgb(80, 135, 245);
+  color: white;
+}
+
+#contactButton {
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid rgb(80, 135, 245);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 21px;
+  color: black;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  outline: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contactButton:hover {
+  background-color: rgb(80, 135, 245);
+  color: white;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  padding: 20px 40px;
+  width: 100%;
+  display: block;
+  background: rgb(80, 135, 245);
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 15%;
+}
+
+#footer>a {
+  color: white;
+}
+
+#footer>a:hover {
+  color: lightgrey;
+}
+
+.imprintTitle {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.imprintText {
+  margin-top: 2px;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-weight: normal;
+}
+
