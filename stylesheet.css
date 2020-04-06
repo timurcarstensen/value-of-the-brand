@@ -14,7 +14,6 @@ body {
 .cardContainer {
   margin: auto;
   overflow: auto;
-  max-width: 900px;
 }
 
 .cardContainer .image {

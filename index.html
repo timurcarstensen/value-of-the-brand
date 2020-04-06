@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Value Of The Brand: Home</title>
-        <link rel="stylesheet" href="stylesheet.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <div id="nav">
-            <a href="index.html">Value Of The Brand</a>
-            <a href="about.html">About</a>
-            <a href="sources.html">Sources</a>
-        </div>
-        <div class="TextBoxContainer">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Value Of The Brand: Home</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="nav">
+        <a href="index.html">Value Of The Brand</a>
+        <a href="about.html">About</a>
+        <a href="sources.html">Sources</a>
+    </div>
+
+    <div style="width: 60%; margin: auto; max-width: 900px">
+        <div style="padding-left: 2%; padding-right: 2%">
             <p class="TextTitle">
                 Brand Values Visualized
             </p>
             <p class="StandardText justify">
-                Odio nec ante neque finibus accumsan senectus ipsum ridiculus convallis est nostra dapibus ligula aptent nullam efficitur quam congue lorem mus enim fermentum sed hac curabitur tortor venenatis sodales pharetra penatibus euismod<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+                We compiled a unique database that includes more than <b>PLACEHOLDER</b> financial brand values that were obtained from the publicly available websites of <b>PLACEHOLDER</b> different brand-valuation providers. The database allows for a diverse comparison of different financial brand values: For example, visualization of time trends in financial brand values; comparison of different brand values in different industries; comparison of financial brand values from different providers for the same brand etc.. You can customize the comparisons as you like.
+
+                
+                <!-- Odio nec ante neque finibus accumsan senectus ipsum ridiculus convallis est nostra dapibus ligula aptent nullam efficitur quam congue lorem mus enim fermentum sed hac curabitur tortor venenatis sodales pharetra penatibus euismod<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
             </p>
-            <button onclick="expandCollapse()" id="readMoreButton">Read more</button>
+            <button onclick="expandCollapse()" id="readMoreButton">Read more</button> -->
         </div>
-        
+
         <div class="cardContainer">
             <div class="image">
                 <a href="viz1.html">
-                    <img src="resources/viz1.png"/>
+                    <img src="resources/viz1.png" />
                 </a>
             </div>
             <div class="image">
                 <a href="viz2.html">
-                    <img src="resources/viz2.png"/>
+                    <img src="resources/viz2.png" />
                 </a>
             </div>
             <div class="image">
                 <a href="viz3.html">
-                    <img src="resources/viz3.png"/>
+                    <img src="resources/viz3.png" />
                 </a>
             </div>
-            <!-- <div class="image">
-                <a href="viz4.html">
-                    <img src="Resources/viz1.png"/>
-                </a>
-            </div> -->
         </div>
-        <div class="EndCardContainer">
+    </div>
+
+    <!--         <div class="EndCardContainer">
             <p style="text-align: center" class="TextTitle">
                 Questions?
             </p>
@@ -55,29 +59,32 @@
             <button onclick="location.href='mailto:alexander.himme@the-klu.org?Subject=Value%20of%20the%20Brand';" id="contactButton">
             Contact
             </button>
-        </div>
-        <div id="footer">
-            <a style="text-decoration: none;" href="https://www.the-klu.org/faculty-research/resident-faculty/alexander-himme/">
+        </div> -->
+    <div id="footer">
+        <a style="text-decoration: none;" href="https://www.the-klu.org/faculty-research/resident-faculty/alexander-himme/" target="_blank">
                 © 2020 Copyright Prof. Dr. Alexander Himme
             </a>
-            <a style="float: right; text-decoration: none;" href="imprint.html">
+        <a style="float: right; text-decoration: none;" href="imprint.html">
                 Imprint
             </a>
-        </div>
-    </body>
-    <script>
+    </div>
+</body>
+<script>
     window.onscroll = function() {
-    myFunction()};
+        myFunction()
+    };
     var navbar = document.getElementById("nav");
     var sticky = navbar.offsetTop;
+
     function myFunction() {
-    if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky"); // makes the navigation bar sticky when scrolling
-    navbar.classList.add("dropShadow"); // adds a shadow to thwe navigation bar when scrolling
-    } else {
-    navbar.classList.remove("sticky"); // removes sticky property from navigation bar when reaching top
-    navbar.classList.remove("dropShadow"); //removes the drop shadow when reaching the top of the site
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky"); // makes the navigation bar sticky when scrolling
+            navbar.classList.add("dropShadow"); // adds a shadow to thwe navigation bar when scrolling
+        } else {
+            navbar.classList.remove("sticky"); // removes sticky property from navigation bar when reaching top
+            navbar.classList.remove("dropShadow"); //removes the drop shadow when reaching the top of the site
+        }
     }
-    }
-    </script>
+</script>
+
 </html>
