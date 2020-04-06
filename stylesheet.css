@@ -79,8 +79,9 @@ body {
 }
 
 .TextBoxContainer {
-  margin: 5% 20% 100px 20%;
-  padding: 0;
+  margin: auto;
+  padding: 0 10%;
+  max-width: 1300px;
 }
 
 .TextTitle {
@@ -203,13 +204,28 @@ body {
   font-size: 25px;
   font-weight: bolder;
   margin-bottom: 0;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 .imprintText {
-  margin-top: 2px;
-  margin-bottom: 0;
+  /*margin-top: 2px;
+  margin-bottom: 10%;*/
+  margin: none;
   text-decoration: none;
   font-weight: normal;
 }
 
+.aboutTitle {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.aboutText {
+  margin-top: 2px;
+  margin-bottom: 10%;
+  margin: none;
+  text-decoration: none;
+  font-weight: normal;
+}
