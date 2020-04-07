@@ -13,4 +13,3 @@ function expandCollapse() {
     moreText.style.display = "inline";
   }
 }
-

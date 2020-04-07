@@ -8,9 +8,14 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162941717-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
-        gtag('config', 'UA-162941717-1', { 'anonymize_ip': true });
+        gtag('config', 'UA-162941717-1', {
+            'anonymize_ip': true
+        });
     </script>
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -31,11 +36,9 @@
             </p>
             <p class="StandardText justify">
                 We compiled a unique database that includes more than <b>PLACEHOLDER</b> financial brand values that were obtained from the publicly available websites of <b>PLACEHOLDER</b> different brand-valuation providers. The database allows for a diverse comparison of different financial brand values: For example, visualization of time trends in financial brand values; comparison of different brand values in different industries; comparison of financial brand values from different providers for the same brand etc.. You can customize the comparisons as you like.
-
-                
-                <!-- Odio nec ante neque finibus accumsan senectus ipsum ridiculus convallis est nostra dapibus ligula aptent nullam efficitur quam congue lorem mus enim fermentum sed hac curabitur tortor venenatis sodales pharetra penatibus euismod<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
-            </p>
+                <!--penatibus euismod<span id="dots">...</span><span id="more">erisque enim ligula venenatis</span>
             <button onclick="expandCollapse()" id="readMoreButton">Read more</button> -->
+            </p>
         </div>
 
         <div class="cardContainer">
@@ -57,17 +60,16 @@
         </div>
     </div>
 
-    <!--         <div class="EndCardContainer">
-            <p style="text-align: center" class="TextTitle">
-                Questions?
-            </p>
-            <p class="EndCardText">
-                Any questions, suggestions or inquiries? Please feel free to get in touch by clicking the button below!
-            </p>
-            <button onclick="location.href='mailto:alexander.himme@the-klu.org?Subject=Value%20of%20the%20Brand';" id="contactButton">
-            Contact
-            </button>
-        </div> -->
+    <div class="cookie-container">
+        <p>
+            We use cookies in this website to give you the best experience on our site and show you relevant ads. To find out more, read our
+            <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
+        </p>
+        <button class="cookie-btn">
+            Okay
+        </button>
+    </div>
+
     <div id="footer">
         <a style="text-decoration: none;" href="https://www.the-klu.org/faculty-research/resident-faculty/alexander-himme/" target="_blank">
                 © 2020 Copyright Prof. Dr. Alexander Himme
@@ -77,7 +79,24 @@
             </a>
     </div>
 </body>
+
 <script>
+    // Cookie Banner
+    const cookieContainer = document.querySelector(".cookie-container");
+    const cookieButton = document.querySelector(".cookie-btn");
+
+    cookieButton.addEventListener("click", () => {
+        cookieContainer.classList.remove("active");
+        localStorage.setItem("cookieBannerDisplayed", "true");
+    });
+
+    setTimeout(() => {
+        if (!localStorage.getItem("cookieBannerDisplayed")) {
+            cookieContainer.classList.add("active");
+        }
+    }, 2000);
+
+    // Hovering Navigation Bar
     window.onscroll = function() {
         myFunction()
     };
