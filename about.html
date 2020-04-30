@@ -19,7 +19,6 @@
     </script>
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -84,25 +83,6 @@
                 Imprint
             </a>
     </div>
+<script src="/script.js" type="text/javascript"></script>
 </body>
-<!-- SCRIPTS -->
-<!-- Sticky Navigation Bar -->
-<script>
-    window.onscroll = function() {
-        myFunction()
-    };
-    var navbar = document.getElementById("nav");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky"); // makes the navigation bar sticky when scrolling
-            navbar.classList.add("dropShadow"); // adds a shadow to thwe navigation bar when scrolling
-        } else {
-            navbar.classList.remove("sticky"); // removes sticky property from navigation bar when reaching top
-            navbar.classList.remove("dropShadow"); //removes the drop shadow when reaching the top of the site
-        }
-    }
-</script>
-
 </html>
