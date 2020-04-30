@@ -1,9 +1,9 @@
 * {
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
-  font-weight: bold;
   text-decoration: none;
   box-sizing: border-box;
+  letter-spacing: normal;
 }
 
 body {
@@ -43,7 +43,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #5087F4;
+  background-color: #393f4d;
 }
 
 #nav li {
@@ -180,16 +180,20 @@ body {
 }
 
 #footer {
-  position: fixed;
   bottom: 0;
   padding: 20px 40px;
   width: 100%;
   display: block;
-  background: rgb(80, 135, 245);
+  background: #393f4d;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 15%;
+  margin-top: 5%;
   z-index: 900;
+  font-weight: normal;
+  letter-spacing: normal;
+  font-stretch: normal;
+  text-rendering: optimizeLegibility; 
+
 }
 
 #footer>a {
@@ -264,4 +268,11 @@ body {
   margin-bottom: 16px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.tableauPlaceholder {
+  position: relative;
+  z-index: 900;
+  margin-bottom: 5%;
+  border: 1px solid black;
 }
