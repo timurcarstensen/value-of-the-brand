@@ -14,6 +14,7 @@ body {
 .cardContainer {
   margin: auto;
   overflow: auto;
+  margin-bottom: 15%
 }
 
 .cardContainer .image {
@@ -24,7 +25,7 @@ body {
 .cardContainer img {
   width: calc(100% - (20px * 2));
   margin: 20px;
-  padding: 10px;
+  /*padding: 10px;*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 12px;
 }
@@ -83,6 +84,21 @@ body {
   max-width: 1300px;
 }
 
+.aboutTitle {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.aboutText {
+  margin-top: 2px;
+  margin-bottom: 5%;
+  margin: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
 .TextTitle {
   font-size: 35px;
   font-weight: bolder;
@@ -135,50 +151,6 @@ body {
   margin: 0 20%;
 }
 
-#readMoreButton {
-  background-color: white;
-  border: 2px solid rgb(80, 135, 245);
-  padding: 7px 15px;
-  text-align: center;
-  text-decoration: none;
-  /*display: flex;*/
-  font-size: 16px;
-  color: black;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  outline: none;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  right: 50%;
-}
-
-#readMoreButton:hover {
-  background-color: rgb(80, 135, 245);
-  color: white;
-}
-
-#contactButton {
-  margin: 0 auto;
-  background-color: white;
-  border: 2px solid rgb(80, 135, 245);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 21px;
-  color: black;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  outline: none;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#contactButton:hover {
-  background-color: rgb(80, 135, 245);
-  color: white;
-}
-
 #footer {
   bottom: 0;
   padding: 20px 40px;
@@ -192,8 +164,7 @@ body {
   font-weight: normal;
   letter-spacing: normal;
   font-stretch: normal;
-  text-rendering: optimizeLegibility; 
-
+  text-rendering: optimizeLegibility;
 }
 
 #footer>a {
@@ -211,21 +182,6 @@ body {
 }
 
 .imprintText {
-  margin: none;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-.aboutTitle {
-  font-size: 25px;
-  font-weight: bolder;
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-.aboutText {
-  margin-top: 2px;
-  margin-bottom: 5%;
   margin: none;
   text-decoration: none;
   font-weight: normal;
